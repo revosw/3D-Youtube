@@ -64,6 +64,7 @@ form {
     color: white;
     font-family: monospace;
     font-size: 30px;
+    opacity: 0;
 }
 
 .hotkey {
