@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    background: #27436B;
+}
+
+.scene,
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.scene {
+    top: 400px;
+    left: 000px;
+}
+
+main {
+    display: grid;
+    margin: auto;
+    margin-top: 200px;
+    transform: rotate(10deg) translate(-16px, 0px) skew(11deg, 0deg);
+    grid-template-areas:
+    "input ."
+    "player help";
+    gap: 30px;
+    width: 1000px;
+}
+
+input {
+    width: 100%;
+    font-family: Geo;
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 8px;
+    appearance: none;
+    border: 0;
+    opacity: 0;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+form {
+    grid-area: input;
+}
+
+#player {
+    grid-area: player;
+}
+
+#help {
+    grid-area: help;
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.hotkey {
+    background: #e053ec;
+    padding: 20px 25px;
+    font-size: 30px;
+}
+
