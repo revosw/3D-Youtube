@@ -6,7 +6,6 @@
 
 body {
     margin: 0;
-    overflow: hidden;
     height: 100vh;
     background: #27436B;
 }
@@ -18,19 +17,17 @@ canvas {
     height: 100%;
 }
 
-.scene {
-    top: 400px;
-    left: 000px;
-}
-
 main {
+    position: absolute;
+    top: -301px;
+    left: 737px;
+    z-index: 1;
     display: grid;
     margin: auto;
-    margin-top: 200px;
-    transform: rotate(10deg) translate(-16px, 0px) skew(11deg, 0deg);
+    transform: perspective(222px) rotateX(0deg) rotateY(-4deg) rotateZ(0deg) translate(0px, 438px) translateZ(-50px) skew(0deg, 0deg);
     grid-template-areas:
-    "input ."
-    "player help";
+        "input ."
+        "player help";
     gap: 30px;
     width: 1000px;
 }
